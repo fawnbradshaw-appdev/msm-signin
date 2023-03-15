@@ -12,5 +12,5 @@
 #
 class Actor < ApplicationRecord
   has_many :characters
-  has_many :filmography, :through => :characters, :source => :movies
+  has_many :filmography, :through => :characters, :source => "Movie"
 end
